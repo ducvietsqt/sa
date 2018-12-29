@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Els</title>
+
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css"
+          type="text/css" media="all"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700,700i&amp;subset=vietnamese"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="content_app_delivery vanNgao">
+    <div class="date_fixed">
+        <p>Date: <input type="text" id="datepicker"></p>
+        <div>
+            <button class="icon_date" data-date="prev">Prev</button>
+            <button class="icon_date" data-date="next">Next</button>
+        </div>
+    </div>
+    <div class="content_delivery">
+        <h4 class="title_bar">Order Details</h4>
+        <div class="order_top_detail">
+            <div class="_left">
+                <strong>Shipping Address</strong>
+                John Harper <br>
+                123 Blake Street <br>
+                Seattle, WA 98101 <br>
+            </div>
+            <div class="result_order_dt">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>QTY</th>
+                        <th>PRODUCT DESCRIPTION</th>
+                        <th>&nbsp;</th>
+                        <th>STOCK LEVEL</th>
+                        <th>ON ORDER</th>
+                        <th>RESERVED FOR DELIVERY</th>
+                        <th>IN STOCK</th>
+                        <th>OUT FOR DELIVERY</th>
+                        <th>POINTS</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Precor Home Bench
+                        </td>
+                        <td>
+                            <div class="checkbox _reset">
+                                <label>
+                                    <input checked type="checkbox">Warehouse Stock
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="color-green">Available</span>
+                        </td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>1</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Precor Home Bench
+                        </td>
+                        <td>
+                            <div class="checkbox _reset">
+                                <label>
+                                    <input checked type="checkbox">Warehouse Stock
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="color-green">Available</span>
+                        </td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>1</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Precor Home Bench
+                        </td>
+                        <td>
+                            <div class="checkbox _reset">
+                                <label>
+                                    <input checked type="checkbox">Warehouse Stock
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="color-green">Available</span>
+                        </td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>1</td>
+                        <td>50</td>
+                    </tr>
+                </table>
+                <div class="order_total_results">
+                    <p class="cpn_flex">
+                        <span><strong>TOTAL POINTS:</strong></span>
+                        <span class="_num"><strong>410</strong></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="title_bar">Delivery Schedule</h4>
+        <div class="schedulebar">
+            <form class="form-inline">
+                <div class="form form--flex">
+                    <div class="form--flex--left">
+                        <div class="form-group">
+                            <label>Market:</label>
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Route:</label>
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Show:</label>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                                           checked>
+                                    All
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                    Open Routes Only
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form--flex--right">
+                        <div class="control-week hasWeek">
+                        <span class="control-week--left icon_date" data-date="prev">
+                            <img src="images/arr.png" alt="">
+                        </span>
+                            <span class="control-week--title">November 4 - 10, 2018</span>
+                            <span class="control-week--right icon_date" data-date="next">
+                            <img src="images/arr.png" alt=""/>
+                        </span>
+                        </div>
+                        <div class="bar-option"> <!--week | list-->
+                            <div class="bar-option--icon _left active">week</div>
+                            <div class="bar-option--icon _right">
+                                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                                list
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="container_row hasWeek">
+                <div class="container_row--week">
+                    <div class="table_week">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>SUN 4</th>
+                                    <th>MON 5</th>
+                                    <th>TUE 6</th>
+                                    <th>WED 7</th>
+                                    <th>THU 8</th>
+                                    <th>FRI 9</th>
+                                    <th>SAT 10</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <div class="_item_flx">
+                                            <p>
+                                                <strong>Washington</strong>
+                                                <span> Route 1</span>
+                                            </p>
+                                            <p>
+                                                <strong>450/500</strong>
+                                                <span>(50)</span>
+                                            </p>
+                                        </div>
+
+                                    </td>
+                                    <td>
+                                        <div class="_item_flx _red">
+                                            <p>
+                                                <strong>Washington</strong>
+                                                <span> Route 1</span>
+                                            </p>
+                                            <p>
+                                                <span>450/500</span>
+                                                <span>(50)</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="_item_flx">
+                                            <p>
+                                                <strong>Washington</strong>
+                                                <span> Route 1</span>
+                                            </p>
+                                            <p>
+                                                <span>450/500</span>
+                                                <span>(50)</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="_item_flx">
+                                            <p>
+                                                <strong>Washington</strong>
+                                                <span> Route 1</span>
+                                            </p>
+                                            <p>
+                                                <strong>450/500</strong>
+                                                <span>(50)</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="_item_flx">
+                                            <p>
+                                                <strong>Washington</strong>
+                                                <span> Route 1</span>
+                                            </p>
+                                            <p>
+                                                <strong>450/500</strong>
+                                                <span>(50)</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="_item_flx">
+                                            <p>
+                                                <strong>Washington</strong>
+                                                <span> Route 1</span>
+                                            </p>
+                                            <p>
+                                                <strong>450/500</strong>
+                                                <span>(50)</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="_item_flx">
+                                            <p>
+                                                <strong>Washington</strong>
+                                                <span> Route 1</span>
+                                            </p>
+                                            <p>
+                                                <strong>450/500</strong>
+                                                <span>(50)</span>
+                                            </p>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_row--list">
+                    <table class="table">
+                        <tr class="thead_tb">
+                            <td class="w_1">#</td>
+                            <td class="w_2">MARKET</td>
+                            <td class="w_1">ROUTE</td>
+                            <td class="w_3">POINTS</td>
+                            <td class="w_3">ACTIONS</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            <div class="head_title" role="button" data-toggle="collapse"
+                                                 href="#collapseExample-1" aria-expanded="false"
+                                                 aria-controls="collapseExample">
+                                                <h5 class="_title">Sun, Nov 4</h5>
+                                                <div class="_right">
+                                                    <button class="btn btn-default _btn_mark">Mark Day Complete</button>
+                                                    <div class="_icon_up">
+                                                        <span class="glyphicon glyphicon-chevron-down"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="collapse" id="collapseExample-1">
+                                                <table class="table">
+                                                    <tr class="row_child_head">
+                                                        <td role="button" data-toggle="collapse" class="w_1"
+                                                            href="#collapseExample-1-1" aria-expanded="false">
+                                                            <span class="icon_table_arr glyphicon glyphicon-play">&nbsp;</span>
+                                                        </td>
+                                                        <td role="button" data-toggle="collapse" class="w_2"
+                                                            href="#collapseExample-1-1" aria-expanded="false">Washington
+                                                        </td>
+                                                        <td class="w_1">WA 1</td>
+                                                        <td role="button" data-toggle="collapse" class="w_3"
+                                                            href="#collapseExample-1-1" aria-expanded="false">
+                                                            <strong>410/500</strong> (90 available)
+                                                        </td>
+                                                        <td class="w_3">
+                                                            <div class="links_row">
+                                                                <span>Modify Points</span>
+                                                                <i>|</i>
+                                                                <span>Email Deliveries</span>
+                                                                <i>|</i>
+                                                                <span>Mark Complete</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="5">
+                                                            <div class="collapse collapse_list"
+                                                                 id="collapseExample-1-1">
+                                                                <div class="table-responsive">
+                                                                    <table class="table bg-blue">
+                                                                        <tr>
+                                                                            <td colspan="8">
+                                                                                <div class="group_link">
+                                                                                    <button class="btn btn-default">
+                                                                                        Move
+                                                                                    </button>
+                                                                                    <button class="btn btn-default">
+                                                                                        Cancel Delivery
+                                                                                    </button>
+                                                                                    <button class="btn btn-default">
+                                                                                        Mark Complete
+                                                                                    </button>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="bar_row_child_head">
+                                                                            <td>
+                                                                                <div class="checkbox">
+                                                                                    <label>
+                                                                                        <input type="checkbox">
+                                                                                    </label>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>QTY</td>
+                                                                            <td>PRODUCT DESCRIPTION</td>
+                                                                            <td>ORDER#</td>
+                                                                            <td>CUSTOMER</td>
+                                                                            <td>ADDRESS</td>
+                                                                            <td>POINTS</td>
+                                                                            <td>ACTIONS</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="checkbox">
+                                                                                    <label>
+                                                                                        <input type="checkbox">
+                                                                                    </label>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                1
+                                                                            </td>
+                                                                            <td>
+                                                                                Precor Home Bench
+                                                                            </td>
+                                                                            <td>12345</td>
+                                                                            <td>Eleanor Perry</td>
+                                                                            <td>12345 Main St., Seattle, WA 98101</td>
+                                                                            <td>50</td>
+                                                                            <td>
+                                                                                <div class="_links_control">
+                                                                            <span class="_item _item_move"
+                                                                                  data-toggle="modal"
+                                                                                  data-target="#myModal">
+                                                                                <i class="glyphicon glyphicon-calendar"></i>
+                                                                                Move
+                                                                            </span>
+                                                                                    <span class="_item _item_cancel">
+                                                                                <i class="glyphicon glyphicon-trash"></i>
+                                                                                Cancel Delivery
+                                                                            </span>
+                                                                                    <span class="_item _item_add">
+                                                                                <i class="glyphicon glyphicon-plus-sign"></i>
+                                                                                Add Item
+                                                                            </span>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="checkbox">
+                                                                                    <label>
+                                                                                        <input type="checkbox">
+                                                                                    </label>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                1
+                                                                            </td>
+                                                                            <td>
+                                                                                Precor Home Bench
+                                                                            </td>
+                                                                            <td>12345</td>
+                                                                            <td>Eleanor Perry</td>
+                                                                            <td>12345 Main St., Seattle, WA 98101</td>
+                                                                            <td>50</td>
+                                                                            <td>
+                                                                                <div class="_links_control">
+                                                                <span class="_item _item_move">
+                                                                    <i class="glyphicon glyphicon-calendar"></i>
+                                                                    Move
+                                                                </span>
+                                                                                    <span class="_item _item_cancel">
+                                                                    <i class="glyphicon glyphicon-trash"></i>
+                                                                    Cancel Delivery
+                                                                </span>
+                                                                                    <span class="_item _item_add">
+                                                                    <i class="glyphicon glyphicon-plus-sign"></i>
+                                                                    Add Item
+                                                                </span>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td colspan="8">
+                                                                                <div class="price_total_title">
+                                                                                    <strong>TOTAL: 450/500</strong>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    modal move
+</button>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">
+                    Move Delivery
+                </h4>
+                <p>
+                    Washington Route 1
+                </p>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <strong>Move from:</strong>
+                </p>
+                <p>Sunday, Nov 4</p> <br/>
+                <table class="table">
+                    <thead>
+                    <tr class="active">
+                        <th>QTY</th>
+                        <th>PRODUCT DESCRIPTION</th>
+                        <th>ORDER #</th>
+                        <th>CUSTOMER</th>
+                        <th>ADDRESS</th>
+                        <th>POINTS</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>Precor Home Bench</td>
+                        <td>12345</td>
+                        <td>Eleanor Perry</td>
+                        <td>12345 Main St., Seattle, WA 98101</td>
+                        <td>50</td>
+                    </tr>
+                </table>
+
+                <p><strong>Move to:</strong></p>
+                <div class="_scroll_both_modal">
+                    <div class="list_check_move">
+                        <div class="_item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Wed, Nov 7 - <strong>470/500</strong> (30 points available -
+                                    exception necessary)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Mon, Nov 5 - <strong class="color-red">500/500</strong> (0
+                                    points available - exception necessary)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Tue, Nov 6 - <strong>410/500</strong> (90)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Wed, Nov 7 - <strong>470/500</strong> (30 points available -
+                                    exception necessary)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Mon, Nov 5 - <strong class="color-red">500/500</strong> (0
+                                    points available - exception necessary)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Tue, Nov 6 - <strong>410/500</strong> (90)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Wed, Nov 7 - <strong>470/500</strong> (30 points available -
+                                    exception necessary)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Mon, Nov 5 - <strong class="color-red">500/500</strong> (0
+                                    points available - exception necessary)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Tue, Nov 6 - <strong>410/500</strong> (90)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="_item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Wed, Nov 7 - <strong>470/500</strong> (30 points available -
+                                    exception necessary)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Move to Selected Date</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
+    Modal cancel
+</button>
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">
+                    Move Delivery
+                </h4>
+                <p>
+                    Washington Route 1
+                </p>
+            </div>
+            <div class="modal-body">
+                <p>Sunday, Nov 4</p> <br/>
+                <table class="table">
+                    <thead>
+                    <tr class="active">
+                        <th>QTY</th>
+                        <th>PRODUCT DESCRIPTION</th>
+                        <th>ORDER #</th>
+                        <th>CUSTOMER</th>
+                        <th>ADDRESS</th>
+                        <th>POINTS</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>Precor Home Bench</td>
+                        <td>12345</td>
+                        <td>Eleanor Perry</td>
+                        <td>12345 Main St., Seattle, WA 98101</td>
+                        <td>50</td>
+                    </tr>
+                </table>
+                <p class="color-blue title_move">
+                    <i class="glyphicon glyphicon-calendar"></i>
+                    <strong>Move delivery to another date</strong>
+                </p>
+                <div class="_scroll_both_modal">
+                    <p class="color-red">
+                        Are you sure you want to cancel this delivery without moving it to another date?
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger">Cancel Delivery</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
+    Modal add item
+</button>
+<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">
+                    Tuesday, November 5
+                </h4>
+                <p class="flex_title">
+                    <strong>Washington Route 1 - Scheduled Deliveries</strong>
+                    <span><strong>410/500</strong>  (90 available)</span>
+                </p>
+            </div>
+            <div class="modal-body">
+                <div class="search_content_form">
+                    <form class="form_search_result">
+                        <div class="cpn_flex">
+                            <input type="text" class="form-control" placeholder="Search for customer or order #"/>
+                            <button type="submit" class="btn btn-default">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <br/>
+                <p><i>Sunday, Nov 4</i></p> <br/>
+                <table class="table">
+                    <thead>
+                    <tr class="active">
+                        <th>&nbsp;</th>
+                        <th>QTY</th>
+                        <th>PRODUCT DESCRIPTION</th>
+                        <th>ORDER #</th>
+                        <th>CUSTOMER</th>
+                        <th>ADDRESS</th>
+                        <th>POINTS</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox">
+                            </label>
+                        </td>
+                        <td>1</td>
+                        <td>Precor Home Bench</td>
+                        <td>12345</td>
+                        <td>Eleanor Perry</td>
+                        <td>12345 Main St., Seattle, WA 98101</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox">
+                            </label>
+                        </td>
+                        <td>1</td>
+                        <td>Precor Home Bench</td>
+                        <td>12345</td>
+                        <td>Eleanor Perry</td>
+                        <td>12345 Main St., Seattle, WA 98101</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox">
+                            </label>
+                        </td>
+                        <td>1</td>
+                        <td>Precor Home Bench</td>
+                        <td>12345</td>
+                        <td>Eleanor Perry</td>
+                        <td>12345 Main St., Seattle, WA 98101</td>
+                        <td>50</td>
+                    </tr>
+
+                </table>
+                <div class="_scroll_both_modal">
+                    <p class="color-red">
+                        Do you want to add the selected products to this delivery?
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" disabled>Add Products</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">
+    Modal week add item
+</button>
+<!-- Modal -->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">
+                    Tuesday, November 5
+                </h4>
+                <p class="flex_title">
+                    <strong>Washington Route 1 - Scheduled Deliveries</strong>
+                    <span><strong>410/500</strong>  (90 available)</span>
+                </p>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                    <tr class="active">
+                        <th class="w_1">QTY</th>
+                        <th class="w_2">PRODUCT DESCRIPTION</th>
+                        <th class="w_1">ORDER #</th>
+                        <th class="w_2">CUSTOMER</th>
+                        <th class="w_3">ADDRESS</th>
+                        <th class="w_1">POINTS</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td colspan="7" style="padding: 0px;">
+                            <div class="_scroll_table">
+                                <table class="table">
+                                    <tr>
+                                        <td class="w_1">1</td>
+                                        <td class="w_2">Precor Home Bench</td>
+                                        <td class="w_1">12345</td>
+                                        <td class="w_2">Eleanor Perry</td>
+                                        <td class="w_3">12345 Main St., Seattle, WA 98101</td>
+                                        <td class="w_1">50</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w_1">1</td>
+                                        <td class="w_2">Precor Home Bench</td>
+                                        <td class="w_1">12345</td>
+                                        <td class="w_2">Eleanor Perry</td>
+                                        <td class="w_3">12345 Main St., Seattle, WA 98101</td>
+                                        <td class="w_1">50</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w_1">1</td>
+                                        <td class="w_2">Precor Home Bench</td>
+                                        <td class="w_1">12345</td>
+                                        <td class="w_2">Eleanor Perry</td>
+                                        <td class="w_3">12345 Main St., Seattle, WA 98101</td>
+                                        <td class="w_1">50</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w_1">1</td>
+                                        <td class="w_2">Precor Home Bench</td>
+                                        <td class="w_1">12345</td>
+                                        <td class="w_2">Eleanor Perry</td>
+                                        <td class="w_3">12345 Main St., Seattle, WA 98101</td>
+                                        <td class="w_1">50</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w_1">1</td>
+                                        <td class="w_2">Precor Home Bench</td>
+                                        <td class="w_1">12345</td>
+                                        <td class="w_2">Eleanor Perry</td>
+                                        <td class="w_3">12345 Main St., Seattle, WA 98101</td>
+                                        <td class="w_1">50</td>
+                                    </tr>
+
+
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="order_total_results">
+                    <p class="cpn_flex">
+                        <span>ORIGINAL TOTAL:</span>
+                        <span class="_num">410</span>
+                    </p>
+                    <p class="cpn_flex">
+                        <span>+ NEW POINTS:</span>
+                        <span class="_num">50</span>
+                    </p>
+                    <p class="cpn_flex">
+                        <span><strong>REVISED TOTAL:</strong></span>
+                        <span class="_num"><strong>46</strong></span>
+                    </p>
+                </div>
+                <div class="_scroll_both_modal">
+                    <p class="color-red">
+                        Do you want to add the selected products to this delivery?
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" disabled>Add Products</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal5">
+    Modal week cancel
+</button>
+<!-- Modal -->
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">
+                    Tuesday, November 5
+                </h4>
+                <p class="flex_title">
+                    <strong>Washington Route 1 - Scheduled Deliveries</strong>
+                    <span class="color-red"><strong>410/500</strong>  (90 available)</span>
+                </p>
+            </div>
+            <div class="modal-body">
+                <div class="_scroll_both_modal">
+                    <p>
+                        There are 0 points available for this route. Click <strong>Continue</strong> to schedule a
+                        delivery on this date anyway.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger">Continue</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/start.js"></script>
+
+</body>
+</html>
