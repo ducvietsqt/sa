@@ -21,116 +21,33 @@
 
   }
 }
-
-
-.title_bar {
-  background: rgba(51, 51, 51, 0.2);
-  border-bottom: solid 2px rgba(0,0,0,0.4);
-  padding: 10px 10px;
-  &.link_add {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .btn {
-      background: #3A70AF;
-      color: #fff;
-      border: none;
-      &:hover, &:focus {
-        border: none;
-      }
-    }
-  }
+.section {
+  text-align:center;
+  font-size: 3em;
+  background: none !important;
 }
 
-@media (min-width: 768px) {
-  .modal-dialog {
-    width: 80%;
-    margin: 30px auto;
-  }
+#page {
+
 }
-.modal {
-  .modal-header {
-    border: none;
-  }
-  table {
-    border: solid 1px #ddd;
-    margin-bottom: 0px;
-  }
-}
-.color-red {
-  font-weight: 700;
-  color: #CE1126;
-}
-.color-blue {
-  color: #3A70AF;
-}
-.color-green {
-  color: #009900;
-}
-.title_move {
-  margin-bottom: 20px;
-}
-.flex_title {
-  display: flex;
-  justify-content: space-between;
-}
-._scroll_both_modal {
+body {
   //border: solid 1px red;
-  max-height: 400px;
-  overflow-y: auto;
+  background: url($tpatch_image + 'bg.jjpg') !important;
 }
 
-.cpn_flex {
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  border: solid 1px blue;
+  overflow: hidden;
+  background: url($tpatch_image + 'bg.jjpg') !important;
+  background-size: cover;
+  z-index: 9999;
+}
+#fullpage {
   //border: solid 1px red;
-  display: flex;
-  justify-content: space-between;
-  input, input.form-control, button, button.btn-default {
-    border-radius: 0;
-  }
-}
-
-._scroll_table {
-  //border: solid 1px red;
-  max-height: 45vh;
-  overflow-y: auto;
-}
-.w_1 {
-  width: 10%;
-}
-.w_2 {
-  width: 20%;
-}
-.w_3 {
-  width: 30%;
-}
-.w_4 {
-  width: 40%;
-}
-.w_5 {
-  width: 50%;
-}
-.table {
-  .w_1 {
-    width: 10%;
-  }
-  .w_2 {
-    width: 20%;
-  }
-  .w_3 {
-    width: 30%;
-  }
-  .w_4 {
-    width: 40%;
-  }
-  .w_5 {
-    width: 50%;
-  }
-
-
-
-}
-.checkbox {
-  &._reset {
-    margin: 0px;
-  }
+  //padding-top: 100px;
 }

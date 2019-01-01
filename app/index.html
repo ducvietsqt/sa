@@ -7,32 +7,105 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Els</title>
 
+    <!--
+        &lt;!&ndash;<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>&ndash;&gt;
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
 
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
+        &lt;!&ndash; Latest compiled JavaScript &ndash;&gt;
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+        &lt;!&ndash;Import Google Icon Font&ndash;&gt;
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css"
+              type="text/css" media="all"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700,700i&amp;subset=vietnamese"
+              rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        &lt;!&ndash; Latest compiled and minified CSS &ndash;&gt;
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"/>
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css"
-          type="text/css" media="all"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700,700i&amp;subset=vietnamese"
-          rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js"></script>
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+
     <!--build:css css/main.css-->
     <link href="css/main.css" rel="stylesheet">
     <!--endbuild-->
 </head>
 <body>
-<div class="" id="page">
+<div class="page" id="page">
+    <div class="header">
+        <div class="section_logo">
+            <img src="images/logo.png" alt="">
+        </div>
+    </div>
+    <div id="fullpage">
+        <div class="section">
+            <div class="section--content">
+                <div class="logo_intro">
+                    <img src="images/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section--content">
 
+                <h4 class="_title">TITILE DEMO</h4>
+                <div class="drs">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.
+                        Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+                        unde
+                        omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque
+                        ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Nemo
+                        enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                        magni
+                        dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+                        quia
+                        dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                        labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section--content">
+                <div class="slide" data-anchor="slide1">Two 1</div>
+                <div class="slide" data-anchor="slide2">Two 2</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section--content">
+                Three
+            </div>
+        </div>
+        <div class="section">
+            <div class="section--content">
+                Four
+            </div>
+        </div>
+    </div>
 </div>
 <!--build:js js/start.js -->
 <script src="js/start.js"></script>
