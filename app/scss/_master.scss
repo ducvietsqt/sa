@@ -32,7 +32,15 @@
 }
 body {
   //border: solid 1px red;
-  background: url($tpatch_image + 'bg.jjpg') !important;
+  font-family: 'Calibri';
+  &.loaded {
+    background: url($tpatch_image + 'bg.jjpg') !important;
+    .logo_intro {
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+  }
 }
 
 .header {
@@ -40,14 +48,108 @@ body {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100px;
-  border: solid 1px blue;
+  //height: 235px;
+  //border: solid 1px blue;
   overflow: hidden;
   background: url($tpatch_image + 'bg.jjpg') !important;
   background-size: cover;
   z-index: 9999;
+  padding: 15px;
 }
 #fullpage {
   //border: solid 1px red;
   //padding-top: 100px;
+}
+
+.content_head {
+  //border: solid 1px red;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0px 25px;
+
+  .section_logo {
+    //width: 300px;
+    //width: 12.2vw;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      display: block;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+  .lan_icons {
+    //border: solid 1px blue;
+    display: flex;
+    align-items: center;
+    ._item {
+      //width: 73px;
+      width: 3.8vw;
+      //height: 74px;
+      height: 3.9vw;
+      //border: solid 1px red;
+      margin: 0px 7.5px;
+      font-size: 0px;
+      display: block;
+      cursor: pointer;
+      background-size: 100% !important;
+    }
+    .icon_vi {
+      background: url($tpatch_image + "vi.png");
+      &.active {
+        background: url($tpatch_image + "vi-active.png");
+      }
+    }
+    .icon_en {
+      background: url($tpatch_image + "en.png");
+      &.active {
+        background: url($tpatch_image + "en-active.png");
+      }
+    }
+  }
+}
+
+.Rounded_Rectangle_1 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  background-color: rgb(63, 224, 208);
+  box-shadow: 1.5px 2.598px 3px 0px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  left: 39px;
+  top: 6424px;
+  width: 13px;
+  height: 13px;
+  z-index: 91;
+}
+#fp-nav {
+  li {
+    a {
+      &.active {
+        span {
+          border-style: solid;
+          border-width: 1px;
+          border-color: rgb(255, 255, 255);
+          border-radius: 50%;
+          background-color: rgb(63, 224, 208);
+          box-shadow: 1.5px 2.598px 3px 0px rgba(0, 0, 0, 0.75);
+          width: 13px;
+          height: 13px;
+        }
+      }
+      span {
+          border-radius: 50%;
+          background-color: rgb(63, 224, 208);
+          width: 8px;
+          height: 8px;
+      }
+    }
+  }
 }
