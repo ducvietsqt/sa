@@ -11,16 +11,31 @@ $(document).ready(function () {
             navigation: true,
             scrollOverflow: true,
             sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
-            paddingTop: '23.6vh',
+            paddingTop: isMobile.any() ? '70px' : '23.6vh',
             // paddingBottom: '10px',
             autoScrolling: true,
             fitToSection: false,
             fitToSectionDelay: 5000,
-
+            lazyLoading: true,
             navigationPosition: 'left',
+            // responsiveWidth: 0,
+            // responsiveHeight: 0,
+            afterLoad: function() {
+                // $.fn.fullpage.reBuild();
+            },
+            afterResize: function(width, height){
+                // fullpage_api.destroy();
+                $.fn.fullpage.reBuild();
+                // $.fn.fullpage.setResponsive(true);
+
+            },
+            afterResponsive: function () {
+                // $.fn.fullpage.reBuild();
+            }
         });
         //methods
         $.fn.fullpage.setAllowScrolling(true);
+
     });
 });
 
