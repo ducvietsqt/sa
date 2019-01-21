@@ -34,7 +34,10 @@ body {
   //border: solid 1px red;
   font-family: 'Calibri';
   &.loaded {
-    background: url($tpatch_image + 'bg.jjpg') !important;
+    background: url($tpatch_image + 'bg.jjpg');
+    background-position: center;
+    background-size: cover;
+
     .logo_intro {
       opacity: 0;
       pointer-events: none;
@@ -51,7 +54,7 @@ body {
   //height: 235px;
   //border: solid 1px red;
   overflow: hidden;
-  background: url($tpatch_image + 'bg.jjpg') !important;
+  //background: url($tpatch_image + 'bg.jjpg') !important;
   background-size: cover;
   z-index: 9999;
   padding: 15px;
@@ -62,6 +65,7 @@ body {
 #fullpage {
   //border: solid 1px red;
   //padding-top: 100px;
+  //transition: top 0.25s linear;
 }
 
 .content_head {

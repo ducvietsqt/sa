@@ -13,15 +13,21 @@ $(document).ready(function () {
             sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
             paddingTop: isMobile.any() ? '70px' : '23.6vh',
             // paddingBottom: '10px',
-            autoScrolling: true,
+            // autoScrolling: true,
             fitToSection: false,
             fitToSectionDelay: 5000,
-            lazyLoading: true,
+            lazyLoading: false,
             navigationPosition: 'left',
+            css3: false,
             // responsiveWidth: 0,
             // responsiveHeight: 0,
-            afterLoad: function() {
-                // $.fn.fullpage.reBuild();
+            afterLoad: function(origin, destination, direction){
+                var loadedSection = this;
+                //using index
+                if(destination === 1) {
+                    $('#fullpage').css('top','0');
+                }
+
             },
             afterResize: function(width, height){
                 // fullpage_api.destroy();
